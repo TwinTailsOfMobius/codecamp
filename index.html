@@ -1,8 +1,10 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tails Photo App</title>
 </head>
 <body>
     <main>
@@ -41,14 +43,24 @@
         <h2>Tails Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
         <fieldset>
-            <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
-            <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+            <legend>Are you Team Tails?</legend>
+            <label><input checked type="radio" id="yes" name="yes-no" value="yes">Yes</label>
+            <label><input type="radio" id="no" name="yes-no" value="no">No</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favorite Sonic personality?</legend>
+            <input checked id="tails" type="checkbox" name="personality" value="tails"> <label for="Tails">Tails</label>
+            <input id="sonic" type="checkbox" name="personality" value="sonic"> <label for="Sonic">Sonic</label>
+            <input id="knuckles" type="checkbox" name="personality" value="knuckles"> <label for="Knuckles">Knuckles</label>
         </fieldset>
             <input type="text" name="foxphotourl" placeholder="insert something cool">
-            <button type="submit">Click Me!</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
     </main>
+        <footer>
+            <p>No Copyright - <a href="https://github.com/TwinTailsOfMobius">TwinTails Project</a></p>
+        </footer>
 </body>
 </html>
 
